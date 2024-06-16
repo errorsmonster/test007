@@ -10,12 +10,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import User, Message, Sticker, Document
 
     
-bughunter0 = Client(
-    "Sticker-Bot",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
-)
+bughunter0 = Client("Sticker-Bot")
+
+api_id = int(os.environ.get("API_ID", "24397477")) 
+  
+api_hash = os.environ.get("API_HASH", "d9b7b677552e995ed2945fe1bdea13d2") 
+  
+bot_token = os.environ.get("BOT_TOKEN", "6329155467:AAG9KmbJEXxJ52JJoIUcbNlf6JmDwd-9QkI")
 
 START_STRING = """ Hi {}, I'm Sticker Bot. 
 
