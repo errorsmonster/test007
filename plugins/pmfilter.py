@@ -269,9 +269,6 @@ async def next_page(bot, query):
                 InlineKeyboardButton("ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
-         btn.insert(0, [
-            InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♨️", callback_data=f"sendfiles#{key}")
-        ])
 
     try:
         if settings['max_btn']:
